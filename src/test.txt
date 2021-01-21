@@ -1,0 +1,91 @@
+const rows =[
+  ////----ROW0----////
+  {
+    col0: [],
+    col1: [],
+    col2: [],
+    col3: [{fieldName: "btn1", text: "Button111", editorType: "button", onClick: ()=>{}, type: "danger", icon: "save"},
+           {text: "MENU1", editorType: "buttonMenu", type: "danger", icon: "save", gruops:[]}
+          ],
+    col4: [],
+    col5: [{fieldName: "btn4", text: "Button444", editorType: "button", onClick: ()=>{}, type: "danger", icon: "save"},
+           {text: "MENU1", editorType: "buttonMenu", type: "danger", icon: "save", gruops:[]}
+          ],
+  },
+  ////----ROW1----////
+  {
+    col0: [{text: "MENU1", editorType: "buttonMenu", type: "danger", icon: "save", gruops:[]}],
+    col1: [],
+    col2: [],
+    col3: [{fieldName: "btn1", text: "Button111", editorType: "button", onClick: ()=>{}, type: "danger", icon: "save",}],
+    col4: [],
+    col5: [],
+  },
+  ////----ROW2----////
+   {
+    col0: [],
+    col1: [],
+    col2: [],
+    col3: [],
+    col4: [],
+    col5: [],
+  },
+  ////----ROW3----////
+   {
+    col0: [],
+    col1: [],
+    col2: [],
+    col3: [],
+    col4: [],
+    col5: [],
+  }
+
+]
+
+
+///////////////////
+Row0 => Col0
+[
+{
+  fieldName: "txt1",
+  text: "Text1",
+  editorType: "textBox",
+  sizes: {xs:12, xl:6}
+  css: getColumnShownCss(['xs','xl'])
+}
+]
+
+
+
+<container>
+ <Row>
+   <Col>
+       <Row>
+         <Col {...obj.sizes} css={obj.css}>
+            <EditorType type={obj.editorType} text={obj.text} />
+         </Col>
+        
+        <Col xl="6">
+           <EditorType type="text" />
+         </Col>
+       </Row>
+   </Col>
+
+   <Col>
+   </Col>
+
+   <Col>
+   </Col>
+
+   <Col>
+   </Col>
+
+   <Col>
+   </Col>
+
+   <Col>
+   </Col>
+
+ </Row>
+</container>
+
